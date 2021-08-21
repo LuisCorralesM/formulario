@@ -4,24 +4,112 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <title>Formulario</title>
 </head>
-<body>
-    <header>
-        <nav>
-            <h1>Formulario de registro</h1>
-        </nav>
-    </header>
+<body class="body">
 
     <main>
 
         <section>
 
-            <article>
+            <article>                
+                <div class="container text-light fs-2 text-center m-xl-20 my-xl-4 px-xl-5">
+                    <form>
+                        <h1>Tu opinión es importante</h1>
+                        <hr>
+                        <div class="mb-3 ">
+                          <label class="form-label">Nombre</label>
+                          <input type="text" class="form-control text-center fs-5" placeholder="José Armando Helados"  required>
+                        </div>
+                        <div class="mb-3">
+                          <label  class="form-label">Correo</label>
+                          <input type="email" class="form-control text-center fs-5" placeholder="JoseArmandoH@gmail.com">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Edad</label>
+                            <input type="number" class="form-control text-center fs-5" placeholder="Años">
+                        </div>  
+                        <label class="form-label">Helado Favorito</label>
+                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                            <option value="0">Ron con pasas</option>
+                            <option value="1">Brownie</option>
+                            <option value="2">Chocolate</option>
+                            <option value="3">Vainilla</option>
+                        </select>
+                        <label class="form-label">Adiciones</label>
+                        <hr>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" value="option1">
+                            <label class="form-check-label" for="exampleRadios1">
+                                Lecherita
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" value="option2">
+                            <label class="form-check-label" for="exampleRadios2">
+                                Arequipe
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" value="option3">
+                            <label class="form-check-label" for="exampleRadios3">
+                                Chocolate derretido
+                            </label>
+                        </div>
+                        <hr>
 
-                <div class="container">
+                        <hr>
+                        <label class="form-check">¿Qué más debe llevar un helado?</label>
+                        <hr>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                            <label class="form-check-label" for="invalidCheck2">
+                              Chispitas de sabores
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                            <label class="form-check-label" for="invalidCheck2">
+                              Conchita
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                            <label class="form-check-label" for="invalidCheck2">
+                              Galleta de vainilla
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                            <label class="form-check-label" for="invalidCheck2">
+                              Barquillo con relleno de Chocolate
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                            <label class="form-check-label" for="invalidCheck2">
+                              Barquillo con relleno de arequipe
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                            <label class="form-check-label" for="invalidCheck2">
+                              Mucho amor
+                            </label>
+                        </div>
+                        <hr><hr>
+                        <label class="form-label">Ayudanos a crecer</label>
+                        <hr>
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                            <label for="floatingTextarea2" class="text-dark fs-5">Dejanos tus sugerencias</label>
+                          </div>
 
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
 
                 </div>
 
